@@ -2,6 +2,7 @@ import React from 'react'
 import PC from './pc'
 import Phone from './phone'
 import MediaQuery from 'react-responsive'
+import './style.css'
 
 class Pages extends React.Component {
     render() {
