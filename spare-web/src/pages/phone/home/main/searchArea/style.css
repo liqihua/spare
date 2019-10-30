@@ -1,0 +1,19 @@
+.searchArea {
+    background-color: brown;
+    height: 3rem;
+}
+
+
+.searchArea-left {
+    background-color: chartreuse;
+    width: 2rem;
+}
+
+.searchArea-middle {
+    background-color: rgb(255, 0, 149);
+}
+
+.searchArea-right {
+    background-color: rgb(47, 0, 255);
+    width: 2rem;
+}
