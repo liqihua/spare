@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import SearchArea from './searchArea'
 
+
 class Main extends React.Component {
     render() {
         return (

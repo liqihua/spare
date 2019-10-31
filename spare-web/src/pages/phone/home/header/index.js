@@ -1,10 +1,13 @@
 import React from 'react'
 import './style.css'
+import SearchArea from '@/pages/phone/home/main/searchArea'
 
 class Header extends React.Component {
     render() {
         return (
-            <div className='header' style={{display:this.props.display}}>header</div>
+            <div id='header' style={{display:this.props.display}}>
+                <SearchArea/>
+            </div>
         )
     }
 }

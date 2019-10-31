@@ -1,19 +1,71 @@
-.searchArea {
-    background-color: brown;
-    height: 3rem;
+#searchArea {
+    background-color: rgb(228, 49, 48);
+    display: -webkit-flex;
+    display: flex;
+    height: 2.8rem;
 }
 
+.searchArea-left,.searchArea-right {
+    background-color: transparent;
+    width: 3rem;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.searchArea-left {
-    background-color: chartreuse;
+.searchArea-left > img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.searchArea-right > span {
+    color: #ffffff;
+}
+
+.searchArea-center {
+    background-color: transparent;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.searchArea-center-radius {
+    background-color: rgb(247, 247, 247);
+    border-radius: 1.5rem;
+    display: -webkit-flex;
+    display: flex;
+    height: 1.8rem;
+    flex: 1;
+}
+
+.searchArea-center-icon-wrap {
+    background-color: transparent;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2rem;
 }
 
-.searchArea-middle {
-    background-color: rgb(255, 0, 149);
+.searchArea-center-input-wrap {
+    background-color: transparent;
+    display: -webkit-flex;
+    align-items: center;
+    display: flex;
+    flex: 1;
 }
 
-.searchArea-right {
-    background-color: rgb(47, 0, 255);
-    width: 2rem;
+.searchArea-center-icon-wrap > img {
+    width: 1.0rem;
+    height: 1.0rem;
+}
+
+.searchArea-center-input-wrap > input {
+    background-color: transparent;
+    border: none;
+    height:1.6rem;
+    width: 90%;
 }

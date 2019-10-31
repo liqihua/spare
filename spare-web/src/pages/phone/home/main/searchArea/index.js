@@ -1,17 +1,28 @@
 import React from 'react'
-import btnCategoryList from '@/static/images/btn-category-list.png'
+import iconCategoryList from '@/static/phone/images/icon/icon-category-list.png'
+import iconSearch from '@/static/phone/images/icon/icon-search.png'
 import './style.css'
-import { Flex, WhiteSpace } from 'antd-mobile';
 
 class SearchArea extends React.Component {
     render() {
         return (
-            <div className='searchArea'>
-                <Flex>
-                    <Flex.Item><div className='searchArea-left'>1</div></Flex.Item>
-                    <Flex.Item><div className='searchArea-middle'>2</div></Flex.Item>
-                    <Flex.Item><div className='searchArea-right'>3</div></Flex.Item>
-                </Flex>
+            <div id='searchArea'>
+                <div className='searchArea-left'>
+                    <img src={iconCategoryList} alt=''/>
+                </div>
+                <div className='searchArea-center'>
+                    <div className='searchArea-center-radius'>
+                        <div className='searchArea-center-icon-wrap'>
+                            <img src={iconSearch} alt=''/>
+                        </div>
+                        <div className='searchArea-center-input-wrap'>
+                            <input placeholder='商品/店铺' disabled='disabled'/>
+                        </div>
+                    </div>
+                </div>
+                <div className='searchArea-right'>
+                    <span>登录</span>
+                </div>
             </div>
         )
     }
