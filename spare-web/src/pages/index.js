@@ -1,6 +1,6 @@
 import React from 'react'
 import PC from './pc'
-import Phone from './phone'
+import Mobile from './mobile'
 import MediaQuery from 'react-responsive'
 import './style.css'
 
@@ -12,7 +12,7 @@ class Pages extends React.Component {
 					<PC/>
 				</MediaQuery>
 				<MediaQuery query='(max-device-width: 1224px)'>
-					<Phone/>
+					<Mobile/>
 				</MediaQuery>
             </div>
         )

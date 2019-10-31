@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import SearchArea from '@/pages/phone/home/main/searchArea'
+import SearchArea from '@/pages/mobile/home/main/searchArea'
 
 class Header extends React.Component {
     render() {

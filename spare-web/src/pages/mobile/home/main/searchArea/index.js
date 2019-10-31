@@ -1,6 +1,6 @@
 import React from 'react'
-import iconCategoryList from '@/static/phone/images/icon/icon-category-list.png'
-import iconSearch from '@/static/phone/images/icon/icon-search.png'
+import iconCategoryList from '@/static/mobile/images/icon/icon-category-list.png'
+import iconSearch from '@/static/mobile/images/icon/icon-search.png'
 import './style.css'
 
 class SearchArea extends React.Component {

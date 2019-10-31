@@ -1,16 +1,15 @@
 import React from 'react'
 import Home from './home'
 import './style.css'
-import 'antd-mobile/dist/antd-mobile.css'
 
-class Phone extends React.Component {
+class Mobile extends React.Component {
     render() {
         return (
-            <div className='phone'>
+            <div id='mobile'>
                 <Home/>
             </div>
         )
     }
 }
 
-export default Phone;
+export default Mobile;
