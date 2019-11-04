@@ -2,6 +2,7 @@ import React from 'react'
 import iconCategoryList from '@/static/mobile/images/icon/icon-category-list.png'
 import iconSearch from '@/static/mobile/images/icon/icon-search.png'
 import './style.css'
+import { withRouter } from 'react-router';
 
 class SearchArea extends React.Component {
     render() {
@@ -15,8 +16,8 @@ class SearchArea extends React.Component {
                         <div className='searchArea-center-icon-wrap'>
                             <img src={iconSearch} alt=''/>
                         </div>
-                        <div className='searchArea-center-input-wrap'>
-                            <input placeholder='商品/店铺' disabled='disabled'/>
+                        <div className='searchArea-center-input-wrap' onClick={this.handleInputClick.bind(this)}>
+                            <input placeholder='商品/店铺' disabled='disabled' />
                         </div>
                     </div>
                 </div>
@@ -26,6 +27,10 @@ class SearchArea extends React.Component {
             </div>
         )
     }
+
+    handleInputClick() {
+        this.props.history.push('/mobile/home/search')
+    }
 }
 
-export default SearchArea
+export default withRouter(SearchArea)

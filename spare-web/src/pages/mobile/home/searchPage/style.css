@@ -1,0 +1,120 @@
+#searchPage {
+    background-color: rgb(246, 246, 246);
+    height: 100%;
+}
+
+#searchBar {
+    background-color: rgb(255, 255, 255);
+    display: -webkit-flex;
+    display: flex;
+    height: 2.8rem;
+}
+
+.searchArea-left,.searchArea-right {
+    background-color: transparent;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchArea-left {
+    width: 3rem;
+}
+
+.searchArea-right {
+    width: 4rem;
+}
+
+.searchArea-left > img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.searchArea-right > span {
+    background-color: rgb(233, 59, 61);
+    display: inline-block;
+    color: #ffffff;
+    width: 2.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;;
+    text-align: center;
+}
+
+.searchArea-center {
+    background-color: transparent;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.searchArea-center-radius {
+    background-color: rgb(247, 247, 247);
+    border-radius: 1.5rem;
+    display: -webkit-flex;
+    display: flex;
+    height: 1.8rem;
+    flex: 1;
+}
+
+.searchArea-center-icon-wrap {
+    background-color: transparent;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+}
+
+.searchArea-center-input-wrap {
+    background-color: transparent;
+    display: -webkit-flex;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.searchArea-center-icon-wrap > img {
+    width: 1.0rem;
+    height: 1.0rem;
+}
+
+.searchArea-center-input-wrap > input {
+    background-color: transparent;
+    border: none;
+    height:1.6rem;
+    width: 90%;
+    outline-style: none ;
+    font-size: 0.5rem;
+}
+
+#hotSearch{
+    background-color: rgb(255,255,255);
+    margin-top: 2px;
+}
+
+.hotSearch-title {
+    padding: 0.8rem 0 0 0.8rem;
+    font-size: 0.9rem;
+}
+
+.hotSearch-keys-item {
+    display: inline-block;
+    background-color: rgb(240, 242, 245);
+    font-size: 0.5rem;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+    margin-left: 0.6rem;
+    margin-top: 0.6rem;
+    border-radius: 0.22rem;
+    color: #333;
+}
+
+.hotSearch-blank {
+    display: block;
+    clear: both;
+    height: 0.8rem;
+}
