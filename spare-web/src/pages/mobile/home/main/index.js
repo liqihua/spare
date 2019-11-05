@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import SearchArea from './searchArea'
+import { withRouter } from 'react-router';
 
 
 class Main extends React.Component {
@@ -8,7 +9,7 @@ class Main extends React.Component {
         return (
             <div className='main'>
                 <div>
-                    <SearchArea/>
+                    <SearchArea goSearchPage={this.goSearchPage.bind(this)}/>
                 </div>
                 <div>main</div>
                 <div>main</div>
@@ -31,7 +32,9 @@ class Main extends React.Component {
         )
     }
 
-
+    goSearchPage() {
+        this.props.goSearchPage()
+    }
     
 
 }
@@ -43,4 +46,4 @@ class Main extends React.Component {
 
 
 
-export default Main;
+export default withRouter(Main);

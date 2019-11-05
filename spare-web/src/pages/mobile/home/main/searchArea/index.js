@@ -29,7 +29,7 @@ class SearchArea extends React.Component {
     }
 
     handleInputClick() {
-        this.props.history.push('/mobile/home/search')
+        this.props.goSearchPage()
     }
 }
 
