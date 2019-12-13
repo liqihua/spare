@@ -1,6 +1,11 @@
 #searchPage {
     background-color: rgb(246, 246, 246);
+    position: fixed;
     height: 100%;
+    z-index: 299;
+    left: 0;
+    top: 0;
+    display: none;
 }
 
 #searchBar {

@@ -6,9 +6,9 @@ import './style.css'
 class SearchPage extends React.Component{
     render() {
         return (
-            <div id='searchPage'>
+            <div id='searchPage' style={{display:this.props.display}}>
                 <div id='searchBar'>
-                    <div className='searchArea-left' onClick={this.handleGoBackClick.bind(this)}>
+                    <div className='searchArea-left' onClick={this.hideSearchPage.bind(this)}>
                         <img src={iconGoBack} alt=''/>
                     </div>
                     <div className='searchArea-center'>
@@ -17,7 +17,7 @@ class SearchPage extends React.Component{
                                 <img src={iconSearch} alt=''/>
                             </div>
                             <div className='searchArea-center-input-wrap'>
-                                <input placeholder='商品/店铺' autoFocus='autoFocus'/>
+                                <input ref={ (input) => this.input = input } placeholder='商品/店铺' autoFocus='autoFocus'/>
                             </div>
                         </div>
                     </div>
@@ -49,8 +49,12 @@ class SearchPage extends React.Component{
         )
     }
 
-    handleGoBackClick() {
-        this.props.history.push('/')
+    hideSearchPage() {
+        this.props.hideSearchPage()
+    }
+
+    componentDidUpdate() {
+        this.input.focus()
     }
 }
 

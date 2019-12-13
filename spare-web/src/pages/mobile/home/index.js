@@ -2,13 +2,14 @@ import React from 'react'
 import Header from './header'
 import Main from './main'
 import Footer from './footer'
-import { withRouter } from 'react-router';
+import SearchPage from './searchPage'
 
 class Home extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            headerDisplay:'none'
+            headerDisplay:'none',
+            searchPageDisplay:'none'
         }
         this.handleScroll = this.handleScroll.bind(this)
     }
@@ -16,21 +17,24 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Header display={this.state.headerDisplay} goSearchPage={this.goSearchPage.bind(this)}/>
-                <Main goSearchPage={this.goSearchPage.bind(this)}/>
+                <Header display={this.state.headerDisplay} showSearchPage={this.showSearchPage.bind(this)}/>
+                <Main showSearchPage={this.showSearchPage.bind(this)}/>
                 <Footer/>
+                <SearchPage display={this.state.searchPageDisplay} hideSearchPage={this.hideSearchPage.bind(this)}/>
             </div>
         )
     }
 
-    componentDidMount() {
-        window.addEventListener('scroll',this.handleScroll)
+    hideSearchPage() {
+        this.setState({
+            searchPageDisplay:'none'
+        })
     }
 
-    componentWillUnmount() {
-        this.setState = (state, callback) => {
-            return
-        }
+    showSearchPage() {
+        this.setState({
+            searchPageDisplay:'block'
+        })
     }
 
     handleScroll() {
@@ -47,9 +51,15 @@ class Home extends React.Component {
         }
     }
 
-    goSearchPage() {
-        this.props.history.push('/mobile/home/search')
+    componentDidMount() {
+        window.addEventListener('scroll',this.handleScroll)
+    }
+
+    componentWillUnmount() {
+        this.setState = (state, callback) => {
+            return
+        }
     }
 }
 
-export default withRouter(Home);
+export default Home;

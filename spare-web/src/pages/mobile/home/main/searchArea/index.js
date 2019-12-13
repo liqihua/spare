@@ -2,7 +2,6 @@ import React from 'react'
 import iconCategoryList from '@/static/mobile/images/icon/icon-category-list.png'
 import iconSearch from '@/static/mobile/images/icon/icon-search.png'
 import './style.css'
-import { withRouter } from 'react-router';
 
 class SearchArea extends React.Component {
     render() {
@@ -29,8 +28,8 @@ class SearchArea extends React.Component {
     }
 
     handleInputClick() {
-        this.props.goSearchPage()
+        this.props.showSearchPage()
     }
 }
 
-export default withRouter(SearchArea)
+export default SearchArea
