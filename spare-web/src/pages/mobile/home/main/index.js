@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import SearchArea from './searchArea'
+import { Button } from 'antd-mobile'
 
 
 class Main extends React.Component {
@@ -10,7 +11,9 @@ class Main extends React.Component {
                 <div>
                     <SearchArea showSearchPage={this.showSearchPage.bind(this)}/>
                 </div>
-                <div>main</div>
+                <div>
+                    <Button>123</Button>
+                </div>
                 <div>main</div>
                 <div>main</div>
                 <div>main</div>
