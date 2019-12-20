@@ -1,7 +1,7 @@
 import React from 'react'
 import PC from './pc'
-import Mobile from './mobile'
 import MediaQuery from 'react-responsive'
+import { Redirect } from 'react-router-dom'
 import './style.css'
 
 class Pages extends React.Component {
@@ -12,7 +12,7 @@ class Pages extends React.Component {
 					<PC/>
 				</MediaQuery>
 				<MediaQuery query='(max-device-width: 1224px)'>
-					<Mobile/>
+                    <Redirect to={{ pathname: "/mobile" }} />;
 				</MediaQuery>
             </div>
         )
