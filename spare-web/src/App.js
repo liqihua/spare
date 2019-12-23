@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Route path='/' exact component={Pages}></Route>
-        <Route path='/mobile' exact component={Mobile}></Route>
+        <Route path='/mobile' component={Mobile}></Route>
       </div>
     </BrowserRouter>
   );
